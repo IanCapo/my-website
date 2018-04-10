@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fabian Pasin | Web Developmer</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="aside float-right">
+      <nav>
+        <li><button class="btn btn-block btn-dark" ><a href="#vita">Vita</a></button></li>
+        <li><button class="btn  btn-block btn-dark"><a href="#skills">Skills</a></button></li>
+        <li><button class="btn btn-block btn-dark"><a href="#contact">Contact</a></button></li>
+        <li><button class="btn btn-block btn-dark"><a href="#fan">A Fan of</a></button></li>
+        <li><button class="btn btn-block btn-dark"><a href="#impressum">Impressum</a></button></li>
+        <li><button class="btn btn-block btn-dark"><a href="#">Back to Top</a></button></li>
+
+      </nav>
+    </div>
+    
+    <header class="">
+
+      <div class="header-container ml-3">
+        <img class="" src="img/Fabian.jpg" alt="">
+        <div class="header-box mt-4">
+          <h2 class="text-left ml-5 mt-3 border-b pb-3">Fabian Pasin</h2>
+          <h3 class="marg-l-200 pt-2">Web Developer</h3>
+        </div>
+      </div>
+    
+    </header>
+
+    <main>
+
+      <div class="row ml-1 marg-t-200 d-flex">
+
+        <div id="contact"class="col-9 p-0 m-0 ">
+          <h4 class="mt-5 mb-3">Contact</h4>
+          <h4>Fabian Pasin</h4>
+          <button id="emailButton"class="btn ml-0">Email</button>
+           <h4 id="email" class=""></h4>
+          <h4>Phone: 0178/18 98 123</h4>
+        </div>
+
+        <div class="col-3">
+          <div  id="vita" class="box-1">
+            <h4>Curriculum Vitae</h4>
+            <div class="row">
+              <ul class="col mt-0 ml-2 p-0">
+                <li class="emphasize"> Now :<span class="ml-5">Web Developer</span></li>
+                <li class="emphasize">2016 - 2018 : Key Account Coordinator <br> <span class="italic marg-l-85">&nbsp;Automotive</span></li>
+                <li class="emphasize">2015 - 2016 : Sales Demand Coordinator <br>
+                <span class="italic marg-l-85">&nbsp;Automotive</span></li>
+                
+              </ul>
+              <ul class="col mt-0 ml-3 p-0">
+                <li class="emphasize">2013 - 2015 : Around-the-World-Tour <br>
+                <span class="italic marg-l-85">&nbsp;Oceania, Asia, South America</span></li>
+                <li class="emphasize">2011 - 2012 : Sales Assistant <br>
+                <span class="italic marg-l-85">&nbsp;Automotive</span></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row marg-t-200">
+      
+        
+        <div class="col-8">
+          <div  id="skills" class="box-2 ml-1 pl-3">
+            <h4 class="mb-2">Skills</h4>
+            <div class="row  px-5">
+               <button disabled>HTML5</button>
+               <button disabled>CSS</button>
+               <button disabled>Modular CSS</button>
+               <button disabled>Responsive Websites</button>
+               <button disabled>Bootstrap</button>
+               <button disabled>Agile</button>
+               <button disabled>Node.js</button>
+               <button disabled>JavaScript</button>
+               <button disabled>React</button>
+               <button disabled>Redux</button>
+               <button disabled>Mobile Apps</button>
+               <button disabled>NoSQL</button>
+               <button disabled>Scrum</button>
+               <button disabled>Kanban</button>
+               <button disabled>MS Office</button>
+               <button disabled>English</button>
+               <button disabled>German</button>
+               <button disabled>Spanish</button>
+               <button disabled>Sales</button>
+            </div>
+          </div>
+          
+          
+        </div>
+
+        <div class="col"><h5 class="ml-5 mt-4 italic">'It is not the <strong>strong</strong>est of the species that survives, nor the most <strong>intelligent</strong> that survives. <br>It is the one that is the
+          most <strong>adaptable</strong> to change.'<br>
+          <br><small>— Charles Darwin (1809-1882)</small></h4></div>
+      </div>
+      
+    
+     
+      <div class="row  marg-t-200 ml-1">
+      
+        <div id="impressum" class=" col-9 p-0 mr-0">
+         
+          <button class="btn btn-dark" onclick="myFunction()">Impressum</button>
+          <div id="Impressum" class="collapseImpressum display-none">
+            <p>
+               Fabian Pasin <br> Grumbrechtstr. 91, 21075 Hamburg <br> Phone: +49 (0) 178 18 98 123  <br>
+              Internet: 
+            </p>
+          </div>
+          
+            
+              
+                
+                  
+              
+        </div>
+          <div class="col-3">
+            <div id="fan" class="box-1 pl-3">
+              <h4>A Fan of:</h4>
+              <div class="row justify-content-between px-5">
+                <button class="btn mx-3">Music</button>
+                <button class="btn mx-3">Travel</button>
+                <button class="btn mx-3">Fitness</button>
+                <button class="btn mx-3">Nature</button>
+                <button class="btn btn-lgmx-3">Motorcycles</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>  
+      
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+  </div>
+
+  <script type="text/JavaScript">
+
+    function myFunction() {
+    var x = document.getElementById("Impressum");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+    document.getElementById("emailButton").onclick=function() {
+      document.getElementById("email").
+    }
+    
+  </script>  
+  
+    
+  
+</body>
+</html>
