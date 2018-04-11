@@ -13,6 +13,16 @@ button {
 
 button:active {
     box-shadow: none;
+    
+}
+
+header {
+    height:600px;
+}
+
+.header__bg-image {
+    background-image:url(../img/jeremy-bishop-393073-unsplash.jpg);
+    background-size:cover;
 }
 
 .btn.btn-dark:hover {
@@ -22,6 +32,7 @@ button:active {
 
 .btn:focus {
     box-shadow: 0 0 0 0.2rem rgba(112, 116, 121, 0.25);
+   
 }
 
 a {
@@ -190,7 +201,7 @@ li {
 }
 
 [href='mailto:"+link+"']:hover {
-    color: white;
+    color:  #353A3F;
     text-shadow: 0 0 3px 3px rgba(10,10,10,0,8);
 }
 
