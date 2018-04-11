@@ -177,7 +177,7 @@ li {
     z-index: 2;
     position: absolute;
     box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
-   
+  
     
 }
 
@@ -185,12 +185,13 @@ li {
     font-style: italic;
 }
 
-[href="mailto:example@email.com"] {
-    color: rgba(38, 39, 39, 0.774);
+[href='mailto:"+link+"'] {
+    color: white(38, 39, 39, 0.774);
 }
 
-[href="mailto:example@email.com"]:hover {
-    color: rgb(15, 116, 141);
+[href='mailto:"+link+"']:hover {
+    color: white;
+    text-shadow: 0 0 3px 3px rgba(10,10,10,0,8);
 }
 
 
@@ -207,5 +208,13 @@ li {
 
 .display-none {
     display:none;
+}
+
+.box-rect {
+  
+    background: rgb(15, 116, 141;
+    height:250px;
+    width: 650px;
+    z-index: 1;
 }
 
