@@ -1,6 +1,11 @@
+/* --------- Elemnt Styles --------- */
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #353A3F;
+}
+header {
+    height:600px;
 }
 
 button {
@@ -16,28 +21,6 @@ button:active {
     
 }
 
-header {
-    height:600px;
-}
-
-.header__bg-image {
-    background-image:url(../img/jeremy-bishop-393073-unsplash.jpg);
-    background-size:cover;
-    background-position: bottom 200px;
-    
-    
-}
-
-.btn.btn-dark:hover {
-    color: #353A3F;
-    background:#FDFDFD;
-}
-
-.btn:focus {
-    box-shadow: 0 0 0 0.2rem rgba(112, 116, 121, 0.25);
-   
-}
-
 a {
     color:white;
     text-decoration: none;
@@ -46,7 +29,6 @@ a {
 a:hover {
     color: #353A3F;
     text-decoration: none;
-   
     
 }
 
@@ -54,31 +36,35 @@ a:hover {
     opacity: 0.8;
 }
 
-.emphasize:hover {
-    font-weight: bold;
-    font-size: 14px;
+h1, h2, h3, h4, h5 {
+    color: rgba(38, 39, 39, 0.774);
 }
+
 
 strong {
     font-weight: normal;
     font-size: 25px;
     color:  rgb(15, 116, 141);
 }
+
+
 .container {
-    z-index: 1 !important;
-    background: rgb(255, 255, 255) !important;
-    height: 245vh;
+    background-image:url(../img/jeremy-bishop-393073-unsplash.jpg);
+    background-size:cover;
+    background-position: bottom 200px;
+    height:230vh;
 }
 
-.row {
-    z-index: 2 !important;
-}
+/*------ Header Styles -------*/
 
-h1, h2, h3, h4, h5 {
-    color: rgba(38, 39, 39, 0.774);
+.header__bg-image {
+    background-image:url(../img/jeremy-bishop-393073-unsplash.jpg);
+    background-size:cover;
+    background-position: bottom 200px;
+    
+      
 }
-
-.header-box {
+.header__box {
     
     height: 250px;
     width: 500px;
@@ -100,45 +86,23 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0 0 5px 3px rgba(10, 10, 10, 0.5);
 }
 
-.marg-l-800 {
-    margin-left: 727px;
-}
-
-.marg-l-200 {
+.ml-200 {
     margin-left: 200px;
 }
 
-.marg-l-150 {
-    margin-left: 140px;
-}
-
-.marg-l-100 {
+.ml-100 {
     margin-left:100px;
 } 
-
-.marg-l-85 {
-    margin-left:85px;
-} 
-
-
-.marg-t-100 {
-    margin-top: 100px;
-}
-
-.marg-t-200 {
-    margin-top: 300px;
-}
-
-.marg-r-150 {
-    margin-right: 250px;
-}
 
 .border-b {
     border-bottom: 2px solid  rgb(15, 116, 141);
 }
 
+
+/*----- Nav bar Styles -----*/
+
 .aside {
-    height: 100vh; 
+    height: 105vh; 
     width: 120px;
     color:white;
     background-color:  rgb(15, 116, 141);
@@ -146,16 +110,16 @@ h1, h2, h3, h4, h5 {
     right: 160px;
     z-index: 1;
     padding-top:10px;
-    margin-top: -20px;
+    margin-top: -25px;
     align-items: center;
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px 0 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
 nav li:last-child {
-    margin-top: 50vh;
+    margin-top: 52vh;
 }
 
 li {
@@ -163,62 +127,111 @@ li {
     margin: 20px 0 0 10px;
 }
 
+/*----- First Section / Contant / Career -----*/
+
+.contact {
+    position: relative;
+    top: -170px;
+}
+
 .box-1 {
    
-    background: white;
+    background: rgb(238, 241, 240);
     height:250px;
     padding: 20px;
     width: 650px;
     z-index: 2;
     margin-top: 30px;
     position: relative;
-    left: -500px;
-    top: -50px;
+    right:33px;
+    top:-5px;
+    
     box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
     
-}
-.col-3>.box-1.ml-420 {
-    margin-left: -420px;
 }
 
+.ml-85 {
+    margin-left:85px;
+}
+
+/* ---- This will come into place once I am more advanced in Javascript ----
+.emphasize:hover {
+    font-weight: bold;
+    font-size: 14px;
+}
+*/
+
+/*----- Second Section / Skills / Quote-----*/
+
 .box-2 {
-  
-    background: white;
+    background: rgb(238, 241, 240);
     height:250px;
-    margin: 0 0 0 -20px;
     padding:20px 50px;
     width: 650px;
-    z-index: 2;
-    position: absolute;
+    top: 190px;
+    left: -90px;
+    position: relative;
     box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
+    margin-right: 0px;
+     
+}
+
+.quote {
+    position: relative;
+    top: 220px;
+    right: 170px;
+    margin:0;
   
+}
+
+/* --------- Footer-Section / Disclaimer / About myself --------- */
+
+.box-3 {
+    background: rgb(238, 241, 240);
+    height:250px;
+    padding: 20px;
+    width: 650px;
+    z-index: 2;
+    margin-top: 30px;
+    position: relative;
+    right: 500px;
+    top: 350px;
+    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
     
+}
+
+.disclaimer {
+    position: relative;
+    top: 380px;
+    z-index: 3;
+    color: rgba(38, 39, 39, 0.774);
+}
+
+
+.collapsedisclaimer {
+    background-color: white;
+    margin-top:20px;
+    
+    padding: 10px;
+    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
+    
+}
+
+/* --------- General classes --------- */
+
+.border {
+    border: 5px solid black;
+}
+
+.btn.btn-dark:hover {
+    color: #353A3F;
+    background:#FDFDFD;
 }
 
 .italic {
     font-style: italic;
 }
 
-[href='mailto:"+link+"'] {
-    color: white(38, 39, 39, 0.774);
-}
-
-[href='mailto:"+link+"']:hover {
-    color:  #353A3F;
-    text-shadow: 0 0 3px 3px rgba(10,10,10,0,8);
-}
-
-
-.collapseImpressum {
-
-    
-    background-color: white;
-    margin-top:20px;
-    width: 300px;
-    padding: 10px;
-    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
-    
-}
 
 .display-none {
     display:none;
