@@ -58,6 +58,14 @@ h1, h2, h3, h4, h5 {
     color: rgba(38, 39, 39, 0.774);
 }
 
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
 
 strong {
     font-weight: normal;
@@ -78,41 +86,30 @@ strong {
 .header__bg-image {
     background-image: url(../img/jeremy-bishop-393073-unsplash.jpg);
     background-size: cover;
-    background-position: bottom 200px;   
+       
 }
 .header__box {
     height: 250px;
     width: 500px;
     margin-left: 100px;
     padding: 50px 70px 50px 30px;
-    background: white;
-    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
     position: relative;
-    top: 70px;
-    left: 5px;
-}
-
-.header__img {
-    z-index: 3;
-    height: 255px;
-    position: absolute;
-    top: -30px;
-    left:-75px;
-    box-shadow: 0 0 5px 3px rgba(10, 10, 10, 0.5);
+    top: 30px;
+    left: -120px;
 }
 
 .header__headline-1 {
     position: relative;
     top: 10px;
     left: 100px;
-    width: 280px;
+    width: 400px;
     padding-bottom: 10px;
 }
 
 .header__headline-2 {
     position: relative;
     top: 5px;
-    left: 200px;
+    left: 245px;
     
 }
 
@@ -154,21 +151,31 @@ li {
 
 .contact {
     position: relative;
-    top: -170px;
+    top: 33px;
     font-size: 20px;
 }
 
 .box-1 {
     background: rgb(238, 241, 240);
     height:250px;
-    padding: 20px;
+    padding: 20px 0 20px 50px;
     width: 650px;
     z-index: 2;
     margin-top: 30px;
     position: relative;
     right: 33px;
     top: -5px;
-    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3); 
+    box-shadow: 0 0 2px 2px rgba(10, 10, 10, 0.3); 
+}
+
+.header__img {
+    z-index: 3;
+    height: 210px;
+    left: -80px;
+    top: 60px;
+    position: absolute;
+    box-shadow: 0 0 2px 1px rgba(10, 10, 10, 0.5);
+    display: none;
 }
 
 
@@ -194,7 +201,7 @@ li {
     top: 190px;
     left: -90px;
     position: relative;
-    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
+    box-shadow: 0 0 2px 2px rgba(10, 10, 10, 0.3);
     margin-right: 0px;   
 }
 
@@ -217,7 +224,7 @@ li {
     position: relative;
     right: 500px;
     top: 350px;
-    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);    
+    box-shadow: 0 0 2px 2px rgba(10, 10, 10, 0.3);    
 }
 
 .disclaimer {
@@ -232,7 +239,7 @@ li {
     background-color: white;
     margin-top: 20px;
     padding: 10px;
-    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
+    box-shadow: 0 0 2px 2px rgba(10, 10, 10, 0.3);
     
 }
 
