@@ -5,33 +5,30 @@ body {
     background-color: #353A3F;
 }
 header {
-    height:600px;
+    height: 600px;
 }
 
 button {
     margin: 5px;
     background: rgb(15, 116, 141);
-    border-radius:5px;
+    border-radius: 5px;
     color: white;
     padding: 5px 10px;
 }
 
 button:active {
-    box-shadow: none;
-    
+    box-shadow: none;  
 }
 
 
 header {
-    height:600px;
-    
+    height:600px; 
 }
 
 .header__bg-image {
-    background-image:url(../img/jeremy-bishop-393073-unsplash.jpg);
-    background-size:cover;
+    background-image: url(../img/jeremy-bishop-393073-unsplash.jpg);
+    background-size: cover;
     background-position: bottom 200px;
-  
 }
 
 .btn.btn-dark:hover {
@@ -41,7 +38,6 @@ header {
 
 .btn:focus {
     box-shadow: 0 0 0 0.2rem rgba(112, 116, 121, 0.25);
-   
 }
 
 a {
@@ -51,8 +47,7 @@ a {
 
 a:hover {
     color: #353A3F;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 [disabled] {
@@ -67,29 +62,25 @@ h1, h2, h3, h4, h5 {
 strong {
     font-weight: normal;
     font-size: 25px;
-    color:  rgb(15, 116, 141);
+    color: rgb(15, 116, 141);
 }
 
 
 .container {
-
-    background-image:url(../img/jeremy-bishop-393073-unsplash.jpg);
-    background-size:cover;
+    background-image: url(../img/jeremy-bishop-393073-unsplash.jpg);
+    background-size: cover;
     background-position: bottom 200px;
-    height:230vh;
+    height: 230vh;
 }
 
 /*------ Header Styles -------*/
 
 .header__bg-image {
-    background-image:url(../img/jeremy-bishop-393073-unsplash.jpg);
-    background-size:cover;
-    background-position: bottom 200px;
-    
-      
+    background-image: url(../img/jeremy-bishop-393073-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom 200px;   
 }
 .header__box {
-    
     height: 250px;
     width: 500px;
     margin-left: 100px;
@@ -98,13 +89,13 @@ strong {
     box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
     position: relative;
     top: 70px;
-    left:5px;
+    left: 5px;
 }
 
 .header__img {
     z-index: 3;
-    height:255px;
-    position:absolute;
+    height: 255px;
+    position: absolute;
     top: -30px;
     left:-75px;
     box-shadow: 0 0 5px 3px rgba(10, 10, 10, 0.5);
@@ -115,7 +106,7 @@ strong {
 }
 
 .ml-100 {
-    margin-left:100px;
+    margin-left: 100px;
 } 
 
 .border-b {
@@ -129,25 +120,21 @@ strong {
     height: 105vh; 
     width: 120px;
     color:white;
-    background-color:  rgb(15, 116, 141);
+    background-color: rgb(15, 116, 141);
     position: fixed;
     right: 160px;
     z-index: 1;
-
-    padding-top:10px;
+    padding-top: 10px;
     margin-top: -25px;
     align-items: center;
     border-radius: 20px 0 0 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
 nav li:last-child {
-
     margin-top: 52vh;
-
 }
 
 li {
@@ -163,8 +150,6 @@ li {
 }
 
 .box-1 {
-   
-
     background: rgb(238, 241, 240);
     height:250px;
     padding: 20px;
@@ -172,15 +157,13 @@ li {
     z-index: 2;
     margin-top: 30px;
     position: relative;
-    right:33px;
-    top:-5px;
-    
-    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
-    
+    right: 33px;
+    top: -5px;
+    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3); 
 }
 
 .ml-85 {
-    margin-left:85px;
+    margin-left: 85px;
 }
 
 /* ---- This will come into place once I am more advanced in Javascript ----
@@ -201,23 +184,21 @@ li {
     left: -90px;
     position: relative;
     box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
-    margin-right: 0px;
-     
+    margin-right: 0px;   
 }
 
 .quote {
     position: relative;
     top: 220px;
     right: 170px;
-    margin:0;
-  
+    margin: 0; 
 }
 
 /* --------- Footer-Section / Disclaimer / About myself --------- */
 
 .box-3 {
     background: rgb(238, 241, 240);
-    height:250px;
+    height: 250px;
     padding: 20px;
     width: 650px;
     z-index: 2;
@@ -225,8 +206,7 @@ li {
     position: relative;
     right: 500px;
     top: 350px;
-    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
-    
+    box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);    
 }
 
 .disclaimer {
@@ -239,8 +219,7 @@ li {
 
 .collapsedisclaimer {
     background-color: white;
-    margin-top:20px;
-    
+    margin-top: 20px;
     padding: 10px;
     box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3);
     
@@ -263,7 +242,7 @@ li {
 
 
 .display-none {
-    display:none;
+    display: none;
 }
 
 
