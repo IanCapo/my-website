@@ -101,16 +101,24 @@ strong {
     box-shadow: 0 0 5px 3px rgba(10, 10, 10, 0.5);
 }
 
-.ml-200 {
-    margin-left: 200px;
+.header__headline-1 {
+    position: relative;
+    top: 10px;
+    left: 100px;
+    width: 280px;
+    padding-bottom: 10px;
 }
 
-.ml-100 {
-    margin-left: 100px;
-} 
+.header__headline-2 {
+    position: relative;
+    top: 5px;
+    left: 200px;
+    
+}
 
 .border-b {
     border-bottom: 2px solid  rgb(15, 116, 141);
+    
 }
 
 
@@ -162,6 +170,8 @@ li {
     top: -5px;
     box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.3); 
 }
+
+
 
 .ml-85 {
     margin-left: 85px;
