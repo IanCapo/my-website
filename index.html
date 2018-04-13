@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
   <div class="container">
     <!--nav-bar-->
     <div class="aside float-right">
@@ -16,8 +17,10 @@
         <li><a href="#vita"><button class="btn btn-block btn-dark" >Career</button></a></li>
         <li><a href="#skills"><button class="btn  btn-block btn-dark">Skills</button></a></li>
         <li><a href="#contact"><button class="btn btn-block btn-dark">Contact</button></a></li>
-        <li><a href="#fan"><button class="btn btn-block btn-dark"> Fun stuff</button></a></li>
-        <li><a href="#impressum"><button class="btn btn-block btn-dark">Impressum</button></a></li>
+
+        <li><a href="#fan"><button class="btn btn-block btn-dark"> About</button></a></li>
+        <li><a href="#disclaimer"><button class="btn btn-block btn-dark">Disclaimer</button></a></li>
+
         <li><a href="#"><button class="btn btn-block btn-dark">Back to Top</button></a></li>
 
       </nav>
@@ -28,43 +31,74 @@
 
       
          
-        <div class="header-box mt-4">
+        <div class="header__box mt-4">
           <img class="header__img" src="img/Fabian.jpg" alt="">
-          <h2 class="marg-l-100 border-b pb-3 pt-3">Fabian Pasin</h2>
-          <h3 class="marg-l-200 pt-2">Web Developer</h3>
+          <h2 class="ml-100 border-b pb-3 pt-3">Fabian Pasin</h2>
+          <h3 class="ml-200 pt-2">Web Developer</h3>
         </div>
      
     
     </header>
 
     <main>
+    <!--Contact-->
 
-      <div class="row ml-1 d-flex" >
+      <div class="row px-4" >
 
-        <div id="contact" class="col-9 p-3 mr-0 ">
-          <h4 class="mt-3 mb-3">Contact</h4>
-          <h4>Fabian Pasin</h4>
-          <a href='mailto:"+link+"'><button class="btn btn-dark ml-0">Email me</button></a>
+        <div  id="contact" class="col-4 contact">
+          <h3 class="mb-2">Contact</h3>
+          <h4 class="ml-5">Fabian Pasin</h4>
+          <h4 class="ml-5">Phone: 0178/18 98 123</h4>
+          <a href='mailto:"+link+"'>
+            <button class="btn btn-dark ml-5">
+              <script type="text/JavaScript">
+          <!--
+// Email obfuscator script 2.1 by Tim Williams, University of Arizona
+// Random encryption key feature coded by Andrew Moulden
+// This code is freeware provided these four comment lines remain intact
+// A wizard to generate this code is at http://www.jottings.com/obfuscator/
+{ coded = "FWEXW3.5WAX3@y6WX7.bU6"
+  key = "BrLCATWb6SUlZHn8PdjIgfKJGz29eEkiN7Yp3htwQ0yFsqacmxo4RXMv15DVOu"
+  shift=coded.length
+  link=""
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {     
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+  }
+document.write("<a href='mailto:"+link+"'>fabian.pasin@gmail.com</a>")
+}
+//-->
+            </script>
+          </button>
+        </a>
           
-          <h4>Phone: 0178/18 98 123</h4>
-        </div>
+          
+      </div>
 
-        <div class="col-3">
+    <!--Vita-->
+
+        <div class="col">
           <div  id="vita" class="box-1">
             <h4>Career</h4>
             <div class="row">
               <ul class="col mt-0 ml-2 p-0">
                 <li class="emphasize"> Now :<span class="ml-5">Web Developer</span></li>
-                <li class="emphasize">2016 - 2018 : Key Account Coordinator <br> <span class="italic marg-l-85">&nbsp;Automotive</span></li>
+                <li class="emphasize">2016 - 2018 : Key Account Coordinator <br> <span class="italic ml-85">&nbsp;Automotive</span></li>
                 <li class="emphasize">2015 - 2016 : Sales Demand Coordinator <br>
-                <span class="italic marg-l-85">&nbsp;Automotive</span></li>
+                <span class="italic ml-85">&nbsp;Automotive</span></li>
                 
               </ul>
               <ul class="col mt-0 ml-3 p-0">
                 <li class="emphasize">2013 - 2015 : Around-the-World-Tour <br>
-                <span class="italic marg-l-85">&nbsp;Oceania, Asia, South America</span></li>
+                <span class="italic ml-85">&nbsp;Oceania, Asia, South America</span></li>
                 <li class="emphasize">2011 - 2012 : Sales Assistant <br>
-                <span class="italic marg-l-85">&nbsp;Automotive</span></li>
+                <span class="italic ml-85">&nbsp;Automotive</span></li>
                 
               </ul>
             </div>
@@ -74,13 +108,13 @@
 
       <!--Skills-Section-->
 
-      <div class="row marg-t-200">
+      <div class="row">
       
         
-        <div class="col-8">
+        <div class="col-8 ">
           
-          <div  id="skills" class="box-2 ml-1 pl-3">
-            <h4 class="mb-2">Skills</h4>
+          <div  id="skills" class="box-2 border">
+            <h4 class="mb-1">Skills</h4>
             <div class="row justify-content-center ml-3 px-5">
                <button disabled>HTML5</button>
                <button disabled>CSS</button>
@@ -110,48 +144,83 @@
 
         <!--Quote-->
 
-        <div class="col"><h5 class="ml-5 mt-4 italic">'It is not the <strong>strong</strong>est of the species that survives, nor the most <strong>intelligent</strong> that survives. <br>It is the one that is the
-          most <strong>adaptable</strong> to change.'<br>
-          <br><small>— Charles Darwin (1809-1882)</small></h4></div>
+        <div class="col-4">
+          <div class="quote">
+            <h5 class="italic">'It is not the
+              <strong>strong</strong>est of the species that survives, nor the most
+              <strong>intelligent</strong> that survives.
+              <br>It is the one that is the most
+              <strong>adaptable</strong> to change.'
+              <br>
+              <br>
+              <small>— Charles Darwin (1809-1882)</small>
+            </h5>
+            </div>
+          </div>
       </div>
       
-    
-      <!--Impressum-->
+    <div class="footer">
+
+      <!--Disclaimer-->
       
-      <div class="row marg-t-200 ml-1 impressum-img">
+      <div class="row">
       
-        <div id="impressum" class=" col-9 p-0 mr-0">
+        <div id="disclaimer" class="disclaimer col-9">
          
-          <button class="btn btn-dark" onclick="myFunction()">Impressum</button>
-          <div id="Impressum" class="collapseImpressum display-none">
+          <button class="btn btn-dark" onclick="myFunction()">Disclaimer</button>
+          <div id="Disclaimer" class="collapsedisclaimer display-none">
             <p>
-               Fabian Pasin <br> Grumbrechtstr. 91, 21075 Hamburg <br> Phone: +49 (0) 178 18 98 123  <br>
-              Internet: <br>
+               <strong>Disclaimer for Fabian Pasin Web Development</strong> <br> If you require any more information or have any questions about our site’s disclaimer,<br>
+              please feel free to contact us by email at fabian.pasin(at)gmail.com.<br> Disclaimers for www.IanPasin.com <br><br>All the information 
+              on this website is published in good faith and for general information purpose only. www.IanPasin.com does not make any warranties
+              about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on
+              this website (www.IanPasin.com), is strictly at your own risk. www.IanPasin.com will not be liable for any losses and/or
+              damages in connection with the use of our website.<br><br> From our website, you can visit other websites by following hyperlinks
+              to such external sites. While we strive to provide only quality links to useful and ethical websites, we have no control
+              over the content and nature of these sites. These links to other websites do not imply a recommendation for all the content
+              found on these sites. Site owners and content may change without notice and may occur before we have the opportunity to remove
+              a link which may have gone ‘bad’.<br><br> Please be also aware that when you leave our website, other sites may have different privacy
+              policies and terms which are beyond our control. Please be sure to check the Privacy Policies of these sites as well as their
+              “Terms of Service” before engaging in any business or uploading any information. <br><br> <strong>Consent</strong> <br>   By using our website, you hereby
+              consent to our disclaimer and agree to its terms. <br><br> <strong>Update</strong> <br>Should we update, amend or make any changes to this document, those
+              changes will be prominently posted here. <br>This Disclaimer was created at World’s Free Disclaimer Generator. <br>
               Photo by Jeremy Bishop on Unsplash
             </p>
           </div>
           
             
               
-         <!--Fun-Stuff-->       
+         <!--About me-->       
                   
               
         </div>
           <div class="col-3">
-            <div id="fan" class="box-1 pl-3">
-              <h4>A Fan of:</h4>
-              <div class="row justify-content-between px-5">
-                <button class="btn mx-3">Music</button>
-                <button class="btn mx-3">Travel</button>
-                <button class="btn mx-3">Fitness</button>
-                <button class="btn mx-3">Nature</button>
-                <button class="btn btn-lgmx-3">Motorcycles</button>
+            <div id="fan" class="box-3 pl-3">
+              <div class="row">
+                <div class="col-5">
+                  <h4 class="mx-4">I am a Fan of
+                  </h4>
+                  <div class="justify-content-around p-1">
+                    <button class="mx-3" disabled>Music</button>
+                    <button class="mx-3" disabled>Travel</button>
+                    <button class="mx-3" disabled>Fitness</button>
+                    <button class="mx-3" disabled>Nature</button>
+                    <button class="mx-3" disabled>Motorcycles</button>
+                  </div>
+
+                 
+                </div> 
+                <div class="col-7">
+                  <h4 class="mb-2">About me</h4>  
+                  <p>I am 29 years old, married and have a cat. <br> We currently reside in Hamburg, Germany. <br><br> I hace recently discovered my passion for coding. <br> And I believe in the power of passion - do what you're passionate about and you'll be successful.</p>
+                  </div>
               </div>
             </div>
           </div>
       </div>
       </div>  
       
+    </div>
 
     </main>
 
@@ -161,7 +230,7 @@
   <script type="text/JavaScript">
 
     function myFunction() {
-    var x = document.getElementById("Impressum");
+    var x = document.getElementById("Disclaimer");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
@@ -169,30 +238,10 @@
     }
 }
 
-<!--
-// Email obfuscator script 2.1 by Tim Williams, University of Arizona
-// Random encryption key feature coded by Andrew Moulden
-// This code is freeware provided these four comment lines remain intact
-// A wizard to generate this code is at http://www.jottings.com/obfuscator/
-{ coded = "FWEXW3.5WAX3@y6WX7.bU6"
-  key = "BrLCATWb6SUlZHn8PdjIgfKJGz29eEkiN7Yp3htwQ0yFsqacmxo4RXMv15DVOu"
-  shift=coded.length
-  link=""
-  for (i=0; i<coded.length; i++) {
-    if (key.indexOf(coded.charAt(i))==-1) {
-      ltr = coded.charAt(i)
-      link += (ltr)
-    }
-    else {     
-      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-      link += (key.charAt(ltr))
-    }
-  }
-document.write("<a href='mailto:"+link+"'>fabian.pasin@gmail.com</a>")
-}
+
 //-->
 </script>
-<noscript>Sorry, you need Javascript on to email me.</noscript>
+
 
    
     
