@@ -21,6 +21,29 @@ button:active {
     
 }
 
+
+header {
+    height:600px;
+    
+}
+
+.header__bg-image {
+    background-image:url(../img/jeremy-bishop-393073-unsplash.jpg);
+    background-size:cover;
+    background-position: bottom 200px;
+  
+}
+
+.btn.btn-dark:hover {
+    color: #353A3F;
+    background:#FDFDFD;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(112, 116, 121, 0.25);
+   
+}
+
 a {
     color:white;
     text-decoration: none;
@@ -49,6 +72,7 @@ strong {
 
 
 .container {
+
     background-image:url(../img/jeremy-bishop-393073-unsplash.jpg);
     background-size:cover;
     background-position: bottom 200px;
@@ -109,17 +133,21 @@ strong {
     position: fixed;
     right: 160px;
     z-index: 1;
+
     padding-top:10px;
     margin-top: -25px;
     align-items: center;
     border-radius: 20px 0 0 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
 nav li:last-child {
+
     margin-top: 52vh;
+
 }
 
 li {
@@ -136,6 +164,7 @@ li {
 
 .box-1 {
    
+
     background: rgb(238, 241, 240);
     height:250px;
     padding: 20px;
