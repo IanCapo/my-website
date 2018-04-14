@@ -13,14 +13,14 @@
 
   <div class="container">
     <!--nav-bar-->
-    <div class="aside float-right">
+    <div class="aside">
       <nav>
         <li><a href="#vita"><button class="btn btn-block btn-dark" >Career</button></a></li>
         <li><a href="#skills"><button class="btn  btn-block btn-dark">Skills</button></a></li>
         <li><a href="#contact"><button class="btn btn-block btn-dark">Contact</button></a></li>
 
         <li><a href="#fan"><button class="btn btn-block btn-dark"> About</button></a></li>
-        <li><a href="#disclaimer"><button class="btn btn-block btn-dark">Disclaimer</button></a></li>
+        <li><a href="#disclaimer"><button class="btn btn-block btn-dark" onclick="myFunction()">Disclaimer</button></a></li>
 
         <li><a href="#"><button class="btn btn-block btn-dark">Back to Top</button></a></li>
 
@@ -28,11 +28,11 @@
     </div>
 
     <!--Header-Section-->
-    <header class="header__bg-image mx-0">
+    <header class="header__bg-image">
       
         <div class="header__box mt-4">
-          <h1 class="header__headline-1 border-b">Fabian Pasin</h2>
-          <h2 class="header__headline-2 pt-2">Web Developer</h3>
+          <h1 class="header__headline-1 border-b">ian pasin</h2>
+          <h2 class="header__headline-2 pt-2">web developer</h3>
         </div>
      
     </header>
@@ -121,8 +121,23 @@
 
       <div class="row">
       
+        <!--Quote-->
         
-        <div class="col-8 ">
+        <div class="col">
+          <div class="quote">
+            <h5 class="italic">'It is not the
+              <strong>strong</strong>est of the species that survives, nor the most
+              <strong>intelligent</strong> that survives.
+              <br>It is the one that is the most
+              <strong>adaptable</strong> to change.'
+              <br>
+              <br>
+              <small>— Charles Darwin (1809-1882)</small>
+            </h5>
+          </div>
+        </div>
+
+        <div class="col">
           
           <div  id="skills" class="box-2 border">
             <h4 class="mb-1">Skills</h4>
@@ -153,21 +168,7 @@
           
         </div>
 
-        <!--Quote-->
-
-        <div class="col-4">
-          <div class="quote">
-            <h5 class="italic">'It is not the
-              <strong>strong</strong>est of the species that survives, nor the most
-              <strong>intelligent</strong> that survives.
-              <br>It is the one that is the most
-              <strong>adaptable</strong> to change.'
-              <br>
-              <br>
-              <small>— Charles Darwin (1809-1882)</small>
-            </h5>
-            </div>
-          </div>
+        
       </div>
       
     <div class="footer">
@@ -176,36 +177,18 @@
       
       <div class="row">
       
-        <div id="disclaimer" class="disclaimer col-9">
+        
          
-          <button class="btn btn-dark" onclick="myFunction()">Disclaimer</button>
-          <div id="Disclaimer" class="collapsedisclaimer display-none">
-            <p>
-               <strong>Disclaimer for Fabian Pasin Web Development</strong> <br> If you require any more information or have any questions about our site’s disclaimer,<br>
-              please feel free to contact us by email.<br> Disclaimers for www.IanPasin.com <br><br>All the information 
-              on this website is published in good faith and for general information purpose only. www.IanPasin.com does not make any warranties
-              about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on
-              this website (www.IanPasin.com), is strictly at your own risk. www.IanPasin.com will not be liable for any losses and/or
-              damages in connection with the use of our website.<br><br> From our website, you can visit other websites by following hyperlinks
-              to such external sites. While we strive to provide only quality links to useful and ethical websites, we have no control
-              over the content and nature of these sites. These links to other websites do not imply a recommendation for all the content
-              found on these sites. Site owners and content may change without notice and may occur before we have the opportunity to remove
-              a link which may have gone ‘bad’.<br><br> Please be also aware that when you leave our website, other sites may have different privacy
-              policies and terms which are beyond our control. Please be sure to check the Privacy Policies of these sites as well as their
-              “Terms of Service” before engaging in any business or uploading any information. <br><br> <strong>Consent</strong> <br>   By using our website, you hereby
-              consent to our disclaimer and agree to its terms. <br><br> <strong>Update</strong> <br>Should we update, amend or make any changes to this document, those
-              changes will be prominently posted here. <br>This Disclaimer was created at World’s Free Disclaimer Generator. <br>
-              Photo by Jeremy Bishop on Unsplash
-            </p>
-          </div>
           
-            
+         
+          
+         
               
          <!--About me-->       
                   
-              
+                
         </div>
-          <div class="col-3">
+          <div class="col">
             <div id="fan" class="box-3">
               <img class="header__img" src="img/Fabian.jpg" alt="">
               <div class="row">
@@ -238,7 +221,43 @@
 
 
   </div>
-
+  <div id="Disclaimer" class="collapsedisclaimer display-none">
+    <div id="closeDisclaimer" class="closing-button">
+      <button type="button" class="close" aria-label="Close" onclick="myFunction()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <p>
+      <em>Disclaimer for Fabian Pasin Web Development</em>
+      <br> If you require any more information or have any questions about our site’s disclaimer,
+      <br> please feel free to contact us by email.
+      <br> Disclaimers for www.IanPasin.com
+      <br>
+      <br>All the information on this website is published in good faith and for general information purpose only. www.IanPasin.com
+      does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take
+      upon the information you find on this website (www.IanPasin.com), is strictly at your own risk. www.IanPasin.com will
+      not be liable for any losses and/or damages in connection with the use of our website.
+      <br>
+      <br> From our website, you can visit other websites by following hyperlinks to such external sites. While we strive to provide
+      only quality links to useful and ethical websites, we have no control over the content and nature of these sites. These
+      links to other websites do not imply a recommendation for all the content found on these sites. Site owners and content
+      may change without notice and may occur before we have the opportunity to remove a link which may have gone ‘bad’.
+      <br>
+      <br> Please be also aware that when you leave our website, other sites may have different privacy policies and terms which
+      are beyond our control. Please be sure to check the Privacy Policies of these sites as well as their “Terms of Service”
+      before engaging in any business or uploading any information.
+      <br>
+      <br>
+      <em>Consent</em>
+      <br> By using our website, you hereby consent to our disclaimer and agree to its terms.
+      <br>
+      <br>
+      <em>Update</em>
+      <br>Should we update, amend or make any changes to this document, those changes will be prominently posted here.
+      <br>This Disclaimer was created at World’s Free Disclaimer Generator.
+      <br> <br> <em>Copyrights</em><br> Photo by Jeremy Bishop on Unsplash
+    </p>
+  </div>
   <script type="text/JavaScript">
 
     function myFunction() {
@@ -249,6 +268,7 @@
             x.style.display = "none";
         }
     } 
+   
   
 
 
