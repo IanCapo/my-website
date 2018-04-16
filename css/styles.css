@@ -3,28 +3,29 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #353A3F;
-    padding-left: 0px !important;
+    padding-left: 0rem !important;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 header {
-    height: 600px;
+    height: 37.5rem;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 button {
-    margin: 5px;
+    margin: 0.3125rem;
     background: rgb(15, 116, 141);
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     color: white;
-    padding: 5px 10px;
+    padding: 0.3125 0.625rem;
 }
 
 button:active {
     box-shadow: none;  
 }
 
-
-header {
-    height:600px; 
-}
 
 .header__bg-image {
     background-image: url(../img/jeremy-bishop-393073-unsplash.jpg);
@@ -60,17 +61,17 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 
 strong {
     font-weight: normal;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: rgb(15, 116, 141);
 }
 
@@ -84,8 +85,14 @@ em {
     background-image: url(../img/jeremy-bishop-393073-unsplash.jpg);
     background-size: cover;
     height: 230vh;
-    margin-top:20px;
-    padding-right: 0px;
+    margin-top:1.25rem;
+    padding-right: 0rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.row {
+    display: flex;
 }
 
 /*------ Header Styles -------*/
@@ -97,32 +104,34 @@ em {
          
 }
 .header__box {
-    height: 250px;
-    width: 500px;
-    margin-left: 100px;
-    padding: 50px 70px 50px 30px;
+    height: 15.625rem;
+    width: 31.25rem;
+    margin-left: 6.25rem;
+    padding: 3.125rem 4.375rem 3.125rem 1.875rem;
     position: relative;
-    top: 30px;
-    right: -150px;
+    top: 1.875rem;
+    right: -9.375rem;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .header__headline-1 {
     position: relative;
-    top: 10px;
-    left: 100px;
-    width: 400px;
-    padding-bottom: 10px;
+    top: 0.625rem;
+    left: 6.25rem;
+    width: 25rem;
+    padding-bottom: 0.625rem;
 }
 
 .header__headline-2 {
     position: relative;
-    top: 5px;
-    left: 245px;
+    top: 0.3125;
+    left: 15.3125rem;
     
 }
 
 .border-b {
-    border-bottom: 2px solid  rgb(15, 116, 141);
+    border-bottom: 0.125rem solid  rgb(15, 116, 141);
     
 }
 
@@ -131,16 +140,16 @@ em {
 
 .aside {
     height: 105vh; 
-    width: 120px;
+    width: 7.5rem;
     color:white;
     background-color: rgb(15, 116, 141);
     position: fixed;
-    left:145px;
+    left: 9.0625rem;
     z-index: 1;
-    padding-top: 10px;
-    margin-top: -25px;
+    padding-top: 0.625rem;
+    margin-top: -1.5625rem;
     align-items: center;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 1.25rem 1.25rem 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -152,7 +161,7 @@ nav li:last-child {
 
 li {
     list-style-type: none;
-    margin: 20px 0 0 10px;
+    margin: 1.25rem 0 0 0.625rem;
 }
 
 
@@ -160,26 +169,26 @@ li {
 
 .contact {
     position: relative;
-    top: 41px;
-    left: 150px;
-    font-size: 20px;
+    top: 2.5625rem;
+    left: 9.375rem;
+    font-size: 1.25rem;
 }
 
 .box-1 {
     background: rgb(238, 241, 240);
-    height:250px;
-    padding: 20px 0 20px 50px;
-    width: 650px;
+    height: 15.625rem;
+    padding: 1.25rem 0 1.25rem 3.125rem;
+    width: 40.625rem;
     z-index: 2;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     position: relative;
-    right: -120px;
-    top: -5px;
-    box-shadow: 1px 1px 1px 1px rgba(10, 10, 10, 0.3);
+    right: -7.5rem;
+    top: -0.3125rem;
+    box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.0625rem rgba(10, 10, 10, 0.3);
 }
 
 .ml-85 {
-    margin-left: 85px;
+    margin-left: 5.3125rem;
 }
 
 /* ---- This will come into place once I am more advanced in Javascript ----
@@ -193,66 +202,66 @@ li {
 
 .box-2 {
     background: rgb(238, 241, 240);
-    height:250px;
-    padding:30px 50px;
-    width: 650px;
-    top: 190px;
-    right: -120px;
+    height: 15.625rem;
+    padding:1.875rem 3.125rem;
+    width: 40.625rem;
+    top: 11.875rem;
+    right: -7.5rem;
     position: relative;
-    box-shadow: 1px 1px 1px 1px rgba(10, 10, 10, 0.3);
+    box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.0625rem rgba(10, 10, 10, 0.3);
     margin-left: 50px;   
 }
 
 .quote {
     position: relative;
-    top: 220px;
-    left: 150px;
-    margin: 0 0 0 35px; 
+    top: 13.75rem;
+    left: 9.375rem;
+    margin: 0 0 0 2.1875rem; 
 }
 
 /* --------- Footer-Section / Disclaimer / About myself --------- */
 
 .box-3 {
     background: rgb(238, 241, 240);
-    height: 250px;
-    padding: 30px;
-    width: 650px;
+    height: 15.625rem;
+    padding: 1.875rem;
+    width: 40.625rem;
     z-index: 2;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     position: relative;
-    left: 350px;
-    top: 350px;
-    box-shadow: 1px 1px 1px 1px rgba(10, 10, 10, 0.3);  
+    left: 21.875rem;
+    top: 21.875rem;
+    box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.0625rem rgba(10, 10, 10, 0.3);  
 }
 
 .header__img {
     z-index: 3;
-    height: 210px;
-    left: -100px;
-    top: 20px;
+    height:  13.125rem;
+    left: -6.25rem;
+    top: 1.25rem;
     position: absolute;
-    box-shadow: 0 0 2px 1px rgba(10, 10, 10, 0.5);
+    box-shadow: 0 0 0.125rem 0.0625rem rgba(10, 10, 10, 0.5);
     
 }
 
 .disclaimer {
     position: relative;
-    bottom: -450px;
-    left: 200px;
+    bottom: -28.125rem;
+    left: 12.5rem;
     color: rgba(38, 39, 39, 0.774);
 }
 
 
 .collapsedisclaimer {
     position: fixed;
-    top: 150px;
-    left: 350px;
-    width: 800px;
+    top: 9.375rem;
+    left: 21.875rem;
+    width: 50rem;
     z-index: 3;
     background-color: white;
-    margin-top: 20px;
-    padding: 10px;
-    box-shadow: 0 0 2px 2px rgba(10, 10, 10, 0.3);
+    margin-top: 1.25rem;
+    padding: 0.625rem;
+    box-shadow: 0 0 0.125rem 0.125rem rgba(10, 10, 10, 0.3);
     font-size: small;
     
     
