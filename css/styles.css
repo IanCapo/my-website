@@ -12,6 +12,7 @@ header {
     height: 37.5rem;
     display: flex;
     flex-flow: row wrap;
+    transition: transform 1s;
 }
 
 button {
@@ -113,6 +114,11 @@ em {
     right: -9.375rem;
     display: flex;
     flex-flow: column wrap;
+    
+}
+
+.header__box:hover {
+    transform: scale(1.5);
 }
 
 .header__headline-1 {
