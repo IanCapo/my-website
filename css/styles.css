@@ -265,8 +265,14 @@ li {
     top: 1.25rem;
     position: absolute;
     box-shadow: 0 0 0.125rem 0.0625rem rgba(10, 10, 10, 0.5);
-    
+    animation: scale 10s;
 }
+
+ @keyframes scale {
+            50% {
+            transform: scale(1.5); 
+        }
+    }
 
 .disclaimer {
     position: relative;
