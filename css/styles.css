@@ -7,12 +7,13 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    
 }
 header {
     height: 37.5rem;
     display: flex;
     flex-flow: row wrap;
-    transition: transform 1s;
+    
 }
 
 button {
@@ -98,6 +99,22 @@ em {
 
 /*------ Header Styles -------*/
 
+.logo {
+    width: 150px;
+    position: absolute;
+    right: 150px;
+    opacity: 1;  
+    transition: 5.5s; 
+    
+}
+
+body:hover .logo {
+    opacity: 0;
+    
+    
+
+}
+
 .header__bg-image {
     background-image: url(../img/jeremy-bishop-393073-unsplash.jpg);
     background-size: cover;
@@ -114,10 +131,11 @@ em {
     right: -9.375rem;
     display: flex;
     flex-flow: column wrap;
+    transition: transform 2s;
     
 }
 
-.header__box:hover {
+body:hover .header__box {
     transform: scale(1.5);
 }
 
