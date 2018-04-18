@@ -8,6 +8,7 @@ body {
     flex-flow: row wrap;
     justify-content: flex-start;
     
+    
 }
 header {
     height: 37.5rem;
@@ -265,13 +266,18 @@ li {
     top: 1.25rem;
     position: absolute;
     box-shadow: 0 0 0.125rem 0.0625rem rgba(10, 10, 10, 0.5);
-    animation: scale 10s;
+    &:hover {
+        animation: scale 5s forwards;
+    }
 }
 
  @keyframes scale {
             50% {
-            transform: scale(1.5); 
+            transform: scale(2.5) translatey(-100px); 
         }
+            100% {
+            transform: translatey(-100px);
+            }
     }
 
 .disclaimer {
