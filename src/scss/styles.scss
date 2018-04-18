@@ -1,5 +1,6 @@
 /* --------- Elemnt Styles --------- */
- @import '../../node_modules/bootstrap/scss/bootstrap.scss'
+ @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #353A3F;
@@ -7,8 +8,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    
-    
+
 }
 header {
     height: 37.5rem;
