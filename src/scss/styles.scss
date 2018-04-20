@@ -3,8 +3,8 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #353A3F;
-    padding-left: 0rem !important;
+    background-color: #353A3F; // Farben bitte in Variablen ab jetzt
+    padding-left: 0rem !important; // bei null lässt man die Einheit weg. Warum important hier?
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -14,7 +14,7 @@ header {
     height: 37.5rem;
     display: flex;
     flex-flow: row wrap;
-    
+
 }
 
 button {
@@ -26,14 +26,14 @@ button {
 }
 
 button:active {
-    box-shadow: none;  
+    box-shadow: none;
 }
 
 
 .header__bg-image {
     background-image: url(../img/jeremy-bishop-393073-unsplash.jpg);
     background-size: cover;
-    
+
 }
 
 .btn.btn-dark:hover {
@@ -52,7 +52,7 @@ a {
 
 a:hover {
     color: #353A3F;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 [disabled] {
@@ -79,7 +79,7 @@ strong {
 }
 
 em {
-   
+
     font-weight: bold;
 }
 
@@ -104,23 +104,23 @@ em {
     width: 150px;
     position: absolute;
     right: 150px;
-    opacity: 1;  
-    transition: 5.5s; 
-    
+    opacity: 1;
+    transition: 5.5s;
+
 }
 
 body:hover .logo {
     opacity: 0;
-    
-    
+// so viel leere Reihen ...
+
 
 }
 
 .header__bg-image {
     background-image: url(../img/jeremy-bishop-393073-unsplash.jpg);
     background-size: cover;
-    
-         
+
+
 }
 .header__box {
     height: 15.625rem;
@@ -133,7 +133,7 @@ body:hover .logo {
     display: flex;
     flex-flow: column wrap;
     transition: transform 2s;
-    
+
 }
 
 body:hover .header__box {
@@ -152,19 +152,19 @@ body:hover .header__box {
     position: relative;
     top: 0.3125;
     left: 15.3125rem;
-    
+
 }
 
 .border-b {
     border-bottom: 0.125rem solid  rgb(15, 116, 141);
-    
+
 }
 
 
 /*----- Nav bar Styles -----*/
 
 .aside {
-    height: 105vh; 
+    height: 105vh;
     width: 7.5rem;
     color:white;
     background-color: rgb(15, 116, 141);
@@ -234,16 +234,18 @@ li {
     right: -7.5rem;
     position: relative;
     box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.0625rem rgba(10, 10, 10, 0.3);
-    margin-left: 50px;   
+    margin-left: 50px;
 }
 
 .quote {
     position: relative;
     top: 13.75rem;
     left: 9.375rem;
-    margin: 0 0 0 2.1875rem; 
+    margin: 0 0 0 2.1875rem;
 }
 
+// statt Kommentare kannst du auch einzelne Dateien machen und die hier
+// importieren mit @import 'myfile';
 /* --------- Footer-Section / Disclaimer / About myself --------- */
 
 .box-3 {
@@ -256,7 +258,7 @@ li {
     position: relative;
     left: 21.875rem;
     top: 21.875rem;
-    box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.0625rem rgba(10, 10, 10, 0.3);  
+    box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.0625rem rgba(10, 10, 10, 0.3);
 }
 
 .header__img {
@@ -273,7 +275,7 @@ li {
 
  @keyframes scale {
             50% {
-            transform: scale(2.5) translatey(-100px); 
+            transform: scale(2.5) translatey(-100px);
         }
             100% {
             transform: translatey(-100px);
@@ -299,8 +301,8 @@ li {
     padding: 0.625rem;
     box-shadow: 0 0 0.125rem 0.125rem rgba(10, 10, 10, 0.3);
     font-size: small;
-    
-    
+
+
 }
 
 

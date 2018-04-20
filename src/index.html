@@ -13,9 +13,11 @@
   <div class="container">
     <img  class="logo"src="img/Logo.png" alt="">
 
-    
+
+    <!-- warum kein aside-Element? -->
     <div class="aside">
       <nav>
+        <!-- wenn du li benutzt, musst du sie in <ul> oder <ol> schreiben. Hier kannst du sie aber auch einfach weglassen -->
         <li><a href="#vita"><button class="btn btn-block btn-dark" >Career</button></a></li>
         <li><a href="#skills"><button class="btn  btn-block btn-dark">Skills</button></a></li>
         <li><a href="#contact"><button class="btn btn-block btn-dark">Contact</button></a></li>
@@ -28,29 +30,30 @@
       </nav>
     </div>
 
-    
+    <!-- BEM-style, yeah! -->
     <header class="header__bg-image">
-      
+
         <div class="header__box mt-4">
           <h1 class="header__headline-1 border-b">ian pasin</h2>
           <h2 class="header__headline-2 pt-2">web developer</h3>
         </div>
-     
+
     </header>
 
     <main>
-    
+
 
       <div class="row px-4" >
 
+        <!-- Hier wäre eine section angebracht -->
         <div  id="contact" class="col-4 contact">
           <h3 class="mb-2 ml-1">Contact</h3>
           <p class="my-1 ml-2">Fabian Pasin</p>
           <p class="mb-2 ml-2">Phone: 0178/18 98 123</p>
           <div>
             <script type="text/JavaScript">
-                    
-          
+
+
           { coded = "FWEXW3.5WAX3@y6WX7.bU6"
             key = "BrLCATWb6SUlZHn8PdjIgfKJGz29eEkiN7Yp3htwQ0yFsqacmxo4RXMv15DVOu"
             shift=coded.length
@@ -60,39 +63,41 @@
                 ltr = coded.charAt(i)
                 link += (ltr)
               }
-              else {     
+              else {
                 ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
                 link += (key.charAt(ltr))
               }
             }
           document.write("<a href='mailto:"+link+"'><button class='btn btn-dark'>fabian.pasin@gmail.com</button></a>")
           }
-         
+
           </script>
         </div>
-          <a href="https://de.linkedin.com/in/fabian-pasin-b2bb64122?trk=profile-badge" 
-            target="_blank"><img 
-            class="ml-2 mt-3" 
+        <!-- Mach bitte die Einrückung deutlicher, man sieht gar nicht, dass ein img irgendwo anfängt -->
+          <a href="https://de.linkedin.com/in/fabian-pasin-b2bb64122?trk=profile-badge"
+            target="_blank"><img
+            class="ml-2 mt-3"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHo66C2n_ZjLiXJ0oyJ1vPVBPerqJBF9c7PCABwDQIgmmM9fTQ2w"
-            alt="Find me on Linkedin" 
+            alt="Find me on Linkedin"
             width="30px">
           </a>
 
          <a href="https://www.xing.com/profile/Fabian_Pasin"
-            target="_blank" 
+            target="_blank"
             rel="me">
-            <img 
-            class="ml-3 mt-3" 
-            src="https://www.xing.com/img/buttons/10_en_btn.gif" 
-            width="105" 
-            
+            <img
+            class="ml-3 mt-3"
+            src="https://www.xing.com/img/buttons/10_en_btn.gif"
+            width="105"
+
             alt="Fabian Pasin">
           </a>
       </div>
 
-    
+
 
         <div class="col">
+          <!-- section, bitte -->
           <div  id="vita" class="box-1">
             <h4>Career</h4>
             <div class="row">
@@ -101,27 +106,28 @@
                 <li class="emphasize">2016 - 2018 : Key Account Coordinator <br> <span class="italic ml-85">&nbsp;Automotive</span></li>
                 <li class="emphasize">2015 - 2016 : Sales Demand Coordinator <br>
                 <span class="italic ml-85">&nbsp;Automotive</span></li>
-                
+
               </ul>
               <ul class="col">
                 <li class="emphasize">2013 - 2015 : Around-the-World-Tour <br>
                 <span class="italic ml-85">&nbsp;Oceania, Asia, South America</span></li>
                 <li class="emphasize">2011 - 2012 : Sales Assistant <br>
                 <span class="italic ml-85">&nbsp;Automotive</span></li>
-                
+
               </ul>
             </div>
           </div>
         </div>
       </div>
 
-      
+
 
       <div class="row">
-      
-       
-        
+
+
+
         <div class="col">
+          <!-- Für Zitate gibt es auch ein html-Element. Schau mal auf MDN -->
           <div class="quote">
             <h5 class="italic">'It is not the
               <strong>strong</strong>est of the species that survives, nor the most
@@ -136,7 +142,7 @@
         </div>
 
         <div class="col">
-          
+          <!-- section, please -->
           <div  id="skills" class="box-2 border">
             <h4 class="mb-1">Skills</h4>
             <div class="row justify-content-center">
@@ -160,31 +166,32 @@
                <button disabled>Spanish</button>
             </div>
           </div>
-          
-          
+
+
         </div>
 
-        
-      </div>
-      
-    <div class="footer">
 
-     
-      
+      </div>
+
+    <div class="footer">
+<!-- so viel whitespace hier -->
+
+
       <div class="row">
-      
-        
-         
-          
-         
-          
-         
-              
-             
-                  
-                
+
+
+
+
+         <!-- so. much. wow. so. much. whitespace. -->
+
+
+
+
+
+
         </div>
           <div class="col">
+            <!-- section -->
             <div id="fan" class="box-3">
               <img class="header__img" src="img/Fabian.jpg" alt="">
               <div class="row">
@@ -199,18 +206,18 @@
                     <button class="mx-3" disabled>Motorcycles</button>
                   </div>
 
-                 
-                </div> 
+
+                </div>
                 <div class="col-7">
-                  <h4 class="mb-3">About me</h4>  
+                  <h4 class="mb-3">About me</h4>
                   <p>I am 29 years old, married and have a cat. <br> We currently reside in Hamburg, Germany. <br><br> I have recently discovered my passion for coding. <br> And I believe in the power of passion - do what you're passionate about and you'll be successful.</p>
                   </div>
               </div>
             </div>
           </div>
       </div>
-      </div>  
-      
+      </div>
+
     </div>
 
     </main>
@@ -219,16 +226,17 @@
   </div>
   <div id="Disclaimer" class="collapsedisclaimer display-none">
     <div id="closeDisclaimer" class="closing-button">
+      <!-- oldschool JS, bitte umschreiben und modernes JavaScript nutzen (kannste ja jetzt) -->
       <button type="button" class="close" aria-label="Close" onclick="myFunction()">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    
+
       <p><em>Disclaimer for Fabian Pasin Web Development</em></p>
        <p>If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by
       email.</p>
       <p><em>Disclaimers for www.IanPasin.com</em></p>
-      
+
       <p>All the information on this website is published in good faith and for general information purpose only. www.IanPasin.com
       does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon
       the information you find on this website (www.IanPasin.com), is strictly at your own risk. www.IanPasin.com will not be liable
@@ -243,16 +251,16 @@
       are beyond our control. Please be sure to check the Privacy Policies of these sites as well as their “Terms of Service”
       before engaging in any business or uploading any information.
       </p>
-      
+
       <p><em>Consent</em></p>
       <p>By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
-      
+
       <p><em>Update</em></p>
       <p>Should we update, amend or make any changes to this document, those changes will be prominently posted here.
       <br>This Disclaimer was created at World’s Free Disclaimer Generator.</p>
       <p><em>Copyrights</em>
       <br> Photo by Jeremy Bishop on Unsplash</p>
-    
+
   </div>
   <script type="text/JavaScript">
 
@@ -263,8 +271,8 @@
         } else {
             x.style.display = "none";
         }
-    } 
-   
+    }
+
 </script>
 
 
