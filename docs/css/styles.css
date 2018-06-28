@@ -6396,7 +6396,7 @@ body:hover .header__box {
   position: fixed;
   left: 9.0625rem;
   z-index: 1;
-  padding-top: 0.625rem;
+  padding-top: 1.625rem;
   margin-top: -1.5625rem;
   align-items: center;
   border-radius: 0 1.25rem 1.25rem 0;
@@ -6404,12 +6404,14 @@ body:hover .header__box {
   flex-direction: column;
   justify-content: start; }
 
-nav li:last-child {
-  margin-top: 52vh; }
+aside a:last-child {
+  position: relative;
+  bottom: -28rem; }
 
-li {
-  list-style-type: none;
-  margin: 1.25rem 0 0 0.625rem; }
+aside a {
+  position: relative;
+  right: -1rem;
+  margin: 1.25rem 0 0 0; }
 
 /*----- First Section / Contant / Career -----*/
 .contact {
